@@ -1,11 +1,11 @@
 class Dotr < Formula
   desc "A dotfiles manager that is as dear as a daughter"
   homepage "https://github.com/uroybd/DotR"
-  version "0.5.4"
+  version "0.5.10"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/DotR/releases/download/v0.5.4/dotr-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/uroybd/DotR/releases/download/v0.5.10/dotr-aarch64-apple-darwin.tar.gz"
       sha256 "" # Will be auto-updated by release workflow
     end
   end
