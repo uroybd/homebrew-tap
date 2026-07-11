@@ -1,27 +1,27 @@
 class Dotr < Formula
   desc "A dotfiles manager that is as dear as a daughter"
   homepage "https://github.com/uroybd/DotR"
-  version "2.0.2"
+  version "2.0.3"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/DotR/releases/download/v2.0.2/dotr-aarch64-apple-darwin.tar.gz"
-      sha256 "4d9bbf675c76c4173b803f279ff0c992440c9054075a113914f9acbb28d9bef3"
+      url "https://github.com/uroybd/DotR/releases/download/v2.0.3/dotr-aarch64-apple-darwin.tar.gz"
+      sha256 "fe774d00b59072111eb7cd4d7c4e0750902e7e7d01fc7f53e72ffb5fd1aae7db"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/DotR/releases/download/v2.0.2/dotr-x86_64-apple-darwin.tar.gz"
-      sha256 "7214fa9a9268f2fc982a567af07be238749f2ba3364dec5af51c461e2f5c92c6"
+      url "https://github.com/uroybd/DotR/releases/download/v2.0.3/dotr-x86_64-apple-darwin.tar.gz"
+      sha256 "9d9bbcc15bba8fd541b4bf0f15d3219b3b6aa76d9dfad17777af48450f835827"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/DotR/releases/download/v2.0.2/dotr-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ca5b39722efd644d2299f4762345c98bc0665c4f0e70e8ca5cc504d1dbebbfc3"
+      url "https://github.com/uroybd/DotR/releases/download/v2.0.3/dotr-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "caa9b47b355ed40103c8d58c21359f21ba485ad5a257e0e7aae4020559bc5258"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/DotR/releases/download/v2.0.2/dotr-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5cb656029ed4f1178407d0553df7a59d9c3b46d0cfdade3059642a4e019c3842"
+      url "https://github.com/uroybd/DotR/releases/download/v2.0.3/dotr-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7ec32f4f31aae651da203ce54405516d47b96f4228e485cd4021f578a8309166"
     end
   end
 
