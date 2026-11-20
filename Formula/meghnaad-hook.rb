@@ -1,28 +1,28 @@
 class MeghnaadHook < Formula
   desc "Your Meghnaad Lua hooks script, as hooks for the real Taskwarrior task"
   homepage "https://github.com/uroybd/Meghnaad"
-  version "0.8.29"
+  version "0.8.30"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.29/meghnaad-hook-0.8.29-aarch64-apple-darwin.tar.gz"
-      sha256 "0d85fe9bf29defd4fa919395901f3d2589b110bbbe7fbcfdc632ff3a94c7dd25"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.30/meghnaad-hook-0.8.30-aarch64-apple-darwin.tar.gz"
+      sha256 "583ea89e87ca6f4e6d1732bc1fb14d969e98786704d7d82a3f9b4c0afcd64f04"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.29/meghnaad-hook-0.8.29-x86_64-apple-darwin.tar.gz"
-      sha256 "0610141a97c98dc1788f1b813083615f3ab9f20ba2b1bfae99a365bb58bc9f73"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.30/meghnaad-hook-0.8.30-x86_64-apple-darwin.tar.gz"
+      sha256 "e7280476e2d11dfb94ca0a7bbb411f5a0ba53a62369aec40575351a144a9b10f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.29/meghnaad-hook-0.8.29-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9a74daba96dbfe9bc286dfe61996c7c3b9c955fcb4731e918eaad8d4c1019cdb"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.30/meghnaad-hook-0.8.30-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c1a37a78614f74654fac24810f6a70a5c3259c2dc1ebb8ea825cf8c19aa68f77"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.29/meghnaad-hook-0.8.29-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d40f25d2b3191b6b08b6e1c5903f010040a34d7ee57606a41fff6a88a3da17b"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.30/meghnaad-hook-0.8.30-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cda7a66094e200227795503775bedfe9b8da8579725eb4f10a2f315db52b41d2"
     end
   end
 
@@ -35,7 +35,7 @@ class MeghnaadHook < Formula
       Point task at your script, once (and again when it defines a hook it did not before):
         meghnaad-hook check ~/hooks.lua
         meghnaad-hook install ~/hooks.lua
-      How it works: https://github.com/uroybd/Meghnaad/blob/v0.8.29/docs/using/hooks.md#the-same-script-with-the-real-task
+      How it works: https://github.com/uroybd/Meghnaad/blob/v0.8.30/docs/using/hooks.md#the-same-script-with-the-real-task
     EOS
   end
 
