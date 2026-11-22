@@ -1,30 +1,30 @@
 class Meghnaad < Formula
   desc "Meghnaad in the terminal: a TUI around the real Taskwarrior task"
   homepage "https://github.com/uroybd/Meghnaad"
-  version "0.8.47"
+  version "0.8.48"
   license "MIT"
 
   depends_on "task"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.47/meghnaad-0.8.47-aarch64-apple-darwin.tar.gz"
-      sha256 "38f37e3b05a28e847301d1d12ac0fb6f25a215efa7252f352f1fd490a7b458e6"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.48/meghnaad-0.8.48-aarch64-apple-darwin.tar.gz"
+      sha256 "ee93bc6175b65f11c2b13717c3f439f5702e5f18c8074894c9d2e76fd99a49e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.47/meghnaad-0.8.47-x86_64-apple-darwin.tar.gz"
-      sha256 "9d64db0527452c41a9295d24e51e7224dd739d8ef1abb5ff6f4fe9d060650161"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.48/meghnaad-0.8.48-x86_64-apple-darwin.tar.gz"
+      sha256 "39f8b0a1e21b57767381d0a94f7f3ab94a4bf0ead31310eb05132fff3c03b222"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.47/meghnaad-0.8.47-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "546e9243d11ec5d2e9d6b25b5d326b9a2245177979d368ba28da50e463b2e49f"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.48/meghnaad-0.8.48-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "69080c062fc6097df539920e89817411398ac9a5f32a3faf111dc55f5093dd62"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.47/meghnaad-0.8.47-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9e741d0405b021c689b93aae3de30f1a1bb7b39264488db8a72febc92c0b4295"
+      url "https://github.com/uroybd/Meghnaad/releases/download/v0.8.48/meghnaad-0.8.48-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "22505c8cd39ffa2b49f4620f7089fe7bf1dc26c4a64eba0f1b2fe20c4862f0e7"
     end
   end
 
@@ -38,7 +38,7 @@ class Meghnaad < Formula
       Run meghnaad: it works on the tasks task reads. Its task commands are kept in
       settings.json in $MEGHNAAD_CONFIG_DIR, else ~/.config/meghnaad.
       meghnaad-tui, its old name, still runs it for now.
-      How it works: https://github.com/uroybd/Meghnaad/blob/v0.8.47/docs/terminal.md
+      How it works: https://github.com/uroybd/Meghnaad/blob/v0.8.48/docs/terminal.md
     EOS
   end
 
